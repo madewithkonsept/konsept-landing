@@ -3,9 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ChakraProvider, Text } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import { system, GlobalStyles } from '@/styles';
-import { Home } from '@/pages';
 import { MainApp } from '@/layouts';
-// import { PageWrapper } from './components';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';

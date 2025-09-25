@@ -1,7 +1,6 @@
 import { PageWrapper } from '@/components';
-import { Image, Stack, Text } from '@chakra-ui/react';
+import { Image, Stack } from '@chakra-ui/react';
 import { Arrows, BounceButton, TopRightThing } from './supporting/BouncinButton';
-import { TheProblem } from '../theProblem/TheProblem';
 import logo from '../../assets/logo-horizontal-inverted.svg';
 
 export const Home = () => {

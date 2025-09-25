@@ -27,7 +27,7 @@ export const TheProblem = () => {
           objectFit={'cover'}
           top={'0'}
           left={'0'}
-          filter="blur(25px)" // adjust blur
+          filter={'blur(25px)'} // adjust blur
           // animation={'rotateInfinite 2s ease-in-out infinite'}
           style={{
             maskImage:
@@ -43,7 +43,7 @@ export const TheProblem = () => {
                 key={`horizontal-card-${index}`}
                 hint={item.hint}
                 reply={item.reply}
-                align={item.align}
+                alignment={item.align}
                 color={item.color}
               />
             );
@@ -57,12 +57,12 @@ export const TheProblem = () => {
 const HorizontalCard = ({
   hint,
   reply,
-  align,
+  alignment,
   color,
 }: {
   hint: string;
   reply: string;
-  align: 'start' | 'end';
+  alignment: string;
   color: string;
 }) => {
   const [isHover, setIsHover] = useState(false);
@@ -77,8 +77,8 @@ const HorizontalCard = ({
       // className="gradient"
       onMouseOver={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      justifyContent={align}
-      alignItems={align}
+      justifyContent={alignment}
+      alignItems={alignment}
       px={'56'}
       // borderBottom={'2px solid #F5F5F5'}
       // _hover={{

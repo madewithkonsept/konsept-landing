@@ -1,6 +1,5 @@
-import { Box } from '@chakra-ui/react';
 import './styles.css';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 export const GradientSVG = ({
   shouldMove,

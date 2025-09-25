@@ -1,6 +1,4 @@
-import { Box, Button, VStack, Text, chakra, HStack } from '@chakra-ui/react';
-import { useState } from 'react';
-import LeftDownArrow from '../../../assets/noun-down-left.svg';
+import { VStack, Text, chakra, HStack } from '@chakra-ui/react';
 export function BounceButton() {
   return (
     <VStack
@@ -35,7 +33,7 @@ export function TopRightThing() {
       position={'absolute'}
       top={'10px'} // distance from the bottom
       right={'20px'}
-      perspective="800px"
+      perspective={'800px'}
       animation={'rotateInfinite 5s ease-in-out infinite'}
 
       //   transform="translateX(-50%)" // center horizontally
