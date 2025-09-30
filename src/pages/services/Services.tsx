@@ -5,7 +5,7 @@ export const Services = () => {
   return (
     <PageWrapper id={'services'}>
       <Center w={'full'} h={'100dvh'}>
-        <Text fontSize={'4xl'}>MORE COMMING SOON</Text>
+        <Text fontSize={'4xl'}>MORE COMMING SOON...</Text>
       </Center>
     </PageWrapper>
   );
