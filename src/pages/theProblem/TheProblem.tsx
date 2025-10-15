@@ -36,19 +36,21 @@ export const TheProblem = () => {
               'linear-gradient(to top, black 0%, transparent 100%, transparent 0%, black 100%)',
           }}
         />
-        <Stack w={'full'} gap={'10'} py={'60px'}>
-          {cards.map((item, index) => {
-            return (
-              <HorizontalCard
-                key={`horizontal-card-${index}`}
-                hint={item.hint}
-                reply={item.reply}
-                alignment={item.align}
-                color={item.color}
-              />
-            );
-          })}
-        </Stack>
+        <Center w={'full'} h={'full'}>
+          <Stack w={{ base: 'full', md: '1000px', lg: '1500px' }} gap={'10'} py={'60px'}>
+            {cards.map((item, index) => {
+              return (
+                <HorizontalCard
+                  key={`horizontal-card-${index}`}
+                  hint={item.hint}
+                  reply={item.reply}
+                  alignment={item.align}
+                  color={item.color}
+                />
+              );
+            })}
+          </Stack>
+        </Center>
       </Stack>
     </PageWrapper>
   );
@@ -105,7 +107,7 @@ const HorizontalCard = ({
               // fontStyle={'italic'}
               color={'eerie'}
               animation={'fadeIn 0.3s'}
-              fontFamily={'monospace'}
+              fontFamily={'body'}
             >
               {reply}
             </Text>

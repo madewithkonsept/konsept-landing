@@ -14,8 +14,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       return (
         <Button
           key={index}
-          color={isActive ? 'black' : 'white'}
-          backgroundColor={isActive ? 'white' : 'black'}
+          color={isActive ? 'eerie' : 'white'}
+          backgroundColor={isActive ? 'white' : 'eerie'}
           size={'xs'}
           w={'100%'}
           h={'100%'}
@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           fontFamily={'monospace'}
           writingMode={'vertical-lr'}
           _hover={{
-            color: 'black',
+            color: 'eerie',
             backgroundColor: 'pear',
           }}
         >

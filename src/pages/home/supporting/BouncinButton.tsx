@@ -58,7 +58,7 @@ export const Arrows = () => {
     >
       <Arrow
         transform={'rotate(-45deg)'}
-        fill={'black'} // controls the fill color
+        fill={'eerie'} // controls the fill color
         stroke={'pear'} // optional, if you want stroke
         strokeWidth={'1px'} // optional
         // viewBox="0 0 78 97.5"

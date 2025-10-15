@@ -1,6 +1,6 @@
 import { Navbar } from '@/components';
 import { useActiveSection } from '@/hooks/useActiveSection';
-import { Home } from '@/pages';
+import { Contact, Home } from '@/pages';
 import { Line } from '@/pages/line/Line';
 import { Services } from '@/pages/services/Services';
 import { TheProblem } from '@/pages/theProblem/TheProblem';
@@ -22,6 +22,7 @@ export const MainApp = () => {
         <TheProblem />
         <Line />
         <Services />
+        <Contact />
       </Flex>
       <Navbar activeSection={activeSection} />
     </>

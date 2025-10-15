@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import '@fontsource/unifontex';
 import '@fontsource/climate-crisis';
 import '@fontsource/ultra';
-import '@fontsource-variable/host-grotesk';
+import '@fontsource-variable/dm-sans';
 
 const root = document.getElementById('root');
 

@@ -597,6 +597,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource-variable/climate-crisis/-/climate-crisis-5.2.10.tgz#96bf3d5eac2b1d0e9ecd792529f32638911801d8"
   integrity sha512-hSRhZWaGBHW+Oax5l7DoElwxk+XEoAGBzXdR1m74Ug2j0DRCehAZ34TkglbOYWgz+SGS4SSBnEqp5Villaw8tg==
 
+"@fontsource-variable/dm-sans@^5.2.8":
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/dm-sans/-/dm-sans-5.2.8.tgz#5a7e91bb7b2a37ef7c06b0c2c4ce262eb7a9a6fe"
+  integrity sha512-AxkvMTvNWgfrmlyjiV05vlHYJa+nRQCf1EfvIrQAPBpFJW0O9VTz7oAFr9S3lvbWdmnFoBk7yFqQL86u64nl2g==
+
 "@fontsource-variable/host-grotesk@^5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@fontsource-variable/host-grotesk/-/host-grotesk-5.2.8.tgz#42c310288fc6c85e388162dbf19bd82b626f4e2c"

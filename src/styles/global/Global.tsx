@@ -7,7 +7,7 @@ const GlobalStyles = () => {
         'html, body, #root': {
           height: '100%',
           color: 'white', // alabaster
-          backgroundColor: 'black', // eerie
+          backgroundColor: '#181818', // eerie
           margin: '0',
           padding: '0',
           overflow: 'auto' /* important don't change auto base code depends on it */,
@@ -62,6 +62,10 @@ const GlobalStyles = () => {
           '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
           '40%': { transform: 'translateY(-10px)' },
           '60%': { transform: 'translateY(-5px)' },
+        },
+        '@keyframes spinInfinite': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       }}
     />
