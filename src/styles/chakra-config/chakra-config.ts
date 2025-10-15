@@ -24,7 +24,7 @@ export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {
       fonts: {
-        heading: { value: `'Ultra', serif` },
+        heading: { value: `'DM Sans Variable', sans-serif` },
         body: { value: `'DM Sans Variable', sans-serif` },
         monospace: { value: `'UnifontEX', monospace` },
       },
