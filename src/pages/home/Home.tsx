@@ -19,13 +19,14 @@ export const Home = () => {
           pt={'10'}
         >
           <TopRightThing />
-          <Image src={logo} h={'200px'} w={'fit-content'} />
+          <Image src={logo} h={{ base: '50px', md: '150px', lg: '200px' }} w={'fit-content'} />
           <Image
             position={'absolute'}
             bottom={'0'}
             right={'0'}
             transform={'translate(0%,0%)'}
             src={graph}
+            // h={{ base: '200px', md: '400px', lg: '700px' }}
             h={'700px'}
             w={'fit-content'}
             zIndex={'-1'}

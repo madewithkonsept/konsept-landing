@@ -4,19 +4,19 @@ export function BounceButton() {
     <VStack
       gap={1}
       position={'absolute'}
-      bottom={'130px'} // distance from the bottom
-      left={'15px'}
+      bottom={{ base: '80px', md: '100px', lg: '130px' }} // distance from the bottom
+      left={{ base: '5px', md: '10px', lg: '15px' }}
       //   transform="translateX(-50%)" // center horizontally
     >
       <Text
         fontFamily={'monospace'}
-        fontSize={'70px'}
+        fontSize={{ base: '50px', md: '60px', lg: '70px' }}
         fontWeight={'bolder'}
         color={'pear'}
         animation={'breath 2s ease-in-out infinite'}
         writingMode={'vertical-lr'}
         textOrientation={'upright'}
-        letterSpacing={'15px'}
+        letterSpacing={{ base: '5px', md: '10px', lg: '15px' }}
         // lineHeightStep={'-10'}
         // text
       >
@@ -52,7 +52,7 @@ export const Arrows = () => {
       gap={1}
       position={'absolute'}
       color={'brandeis'}
-      bottom={'-20px'} // distance from the bottom
+      bottom={{ base: '-10px', md: '-20px', lg: '-30px' }} // distance from the bottom
       left={'10px'}
       //   transform="translateX(-50%)" // center horizontally
     >
@@ -64,7 +64,7 @@ export const Arrows = () => {
         // viewBox="0 0 78 97.5"
         // w={'160px'}
         // h={'160px'}
-        boxSize={'160px'}
+        boxSize={{ base: '100px', md: '120px', lg: '160px' }}
         viewBox={'0 0 100 100'}
       >
         <g transform={'scale(1)'}>

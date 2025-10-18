@@ -17,7 +17,7 @@ export const Contact = () => {
     <PageWrapper id={'contact'}>
       <Center w={'full'} h={'100dvh'} flexDir={'column'}>
         <Heading
-          fontSize={'4xl'}
+          fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
           fontWeight={'bold'}
           fontFamily={'heading'}
           textAlign={'center'}
@@ -30,7 +30,7 @@ export const Contact = () => {
             <Stack
               gap={'4'}
               mt={'8'}
-              w={'500px'}
+              w={{ base: '300px', md: '400px', lg: '500px' }}
               bgColor={'pear'}
               color={'eerie'}
               p={'8'}
