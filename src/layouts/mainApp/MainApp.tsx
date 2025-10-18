@@ -3,7 +3,6 @@ import { useActiveSection } from '@/hooks/useActiveSection';
 import { Contact, Home } from '@/pages';
 import { Line } from '@/pages/line/Line';
 import { Services } from '@/pages/services/Services';
-import { TheProblem } from '@/pages/theProblem/TheProblem';
 import { Flex } from '@chakra-ui/react';
 
 export const MainApp = () => {
@@ -19,9 +18,9 @@ export const MainApp = () => {
         position={'relative'}
       >
         <Home />
-        <TheProblem />
-        <Line />
+        {/* <TheProb/lem /> */}
         <Services />
+        <Line />
         <Contact />
       </Flex>
       <Navbar activeSection={activeSection} />

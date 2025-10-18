@@ -30,6 +30,7 @@ export const system = createSystem(defaultConfig, {
       },
       colors: {
         eerie: { value: '#181818' }, // background
+        eerieLight: { value: '#3d3d3d' }, // background
         brandeis: { value: '#0367fc' }, // accent 1
         pear: { value: '#BFFF00' }, // accent 2
 

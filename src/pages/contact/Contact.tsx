@@ -16,22 +16,51 @@ export const Contact = () => {
   return (
     <PageWrapper id={'contact'}>
       <Center w={'full'} h={'100dvh'} flexDir={'column'}>
-        <Heading>Get in contact</Heading>
+        <Heading
+          fontSize={'4xl'}
+          fontWeight={'bold'}
+          fontFamily={'heading'}
+          textAlign={'center'}
+          as={'h2'}
+        >
+          GET IN TOUCH
+        </Heading>
         <Formik onSubmit={handleSubmit} initialValues={{ name: '', email: '', message: '' }}>
           <Form>
             <Stack
               gap={'4'}
-              mt={'4'}
+              mt={'8'}
               w={'500px'}
               bgColor={'pear'}
               color={'eerie'}
-              p={'4'}
+              p={'8'}
               rounded={'xl'}
             >
-              <TextInput name={'name'} label={'Name'} />
-              <TextInput name={'email'} label={'Email'} />
-              <TextInput name={'message'} label={'Message'} isTextArea />
-              <Button type={'submit'}>Submit</Button>
+              <TextInput
+                name={'name'}
+                label={'Name'}
+                bgColor={'white'}
+                color={'eerie'}
+                borderColor={'eerie'}
+              />
+              <TextInput
+                name={'email'}
+                label={'Email'}
+                bgColor={'white'}
+                color={'eerie'}
+                borderColor={'eerie'}
+              />
+              <TextInput
+                isTextArea
+                name={'message'}
+                label={'Message'}
+                bgColor={'white'}
+                color={'eerie'}
+                borderColor={'eerie'}
+              />
+              <Button type={'submit'} variant={'solid'} size={'lg'}>
+                SEND MESSAGE
+              </Button>
             </Stack>
           </Form>
         </Formik>

@@ -1,15 +1,20 @@
 import { useField } from 'formik';
 import { Input, Text, Field as ChakraField } from '@chakra-ui/react';
-import type { InputProps } from '@chakra-ui/react';
+import type { InputProps, TextareaProps } from '@chakra-ui/react';
 import { Textarea } from '@chakra-ui/react';
+
+type CustomTextareaProps = {
+  label: string;
+  isTextArea: true;
+} & TextareaProps;
 
 export type TextInputType = {
   label: string;
-  isTextArea?: boolean;
+  isTextArea?: false;
 } & InputProps;
 
-export const TextInput = (props: TextInputType) => {
-  const { name, required = false, label, isTextArea = false } = props;
+export const TextInput = (props: TextInputType | CustomTextareaProps) => {
+  const { name, required = false, label, isTextArea = false, borderColor = 'eerie' } = props;
   const [field, meta] = useField(name);
   const { error, touched } = meta;
 
@@ -19,14 +24,40 @@ export const TextInput = (props: TextInputType) => {
         {label}
       </ChakraField.Label>
       {isTextArea ? (
-        <Textarea />
-      ) : (
-        <Input
-          {...props}
+        <Textarea
           {...field}
           w={'full'}
-          borderWidth={'thin'}
-          borderColor={error ? 'red.500' : 'gray.300'}
+          rounded={'md'}
+          borderWidth={'medium'}
+          borderColor={error ? 'red.500' : borderColor}
+          _focusVisible={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          _focus={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          _active={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          {...(props as TextareaProps)}
+        />
+      ) : (
+        <Input
+          {...field}
+          w={'full'}
+          rounded={'md'}
+          borderWidth={'medium'}
+          borderColor={error ? 'red.500' : borderColor}
+          _focus={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          _active={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          _focusVisible={{
+            borderColor: error ? 'red.500' : 'eerieLight',
+          }}
+          {...(props as InputProps)}
         />
       )}
       {error && touched && (
